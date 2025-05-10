@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      transition: background 0.3s ease;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/1600x600/?design,portfolio') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+      transition: transform 0.5s ease;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+      text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    header p {
+      margin-top: 10px;
+      color: #555;
+      font-size: 18px;
+    }
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      transition: opacity 0.3s ease;
+    }
+    .card img:hover {
+      opacity: 0.9;
+    }
+    .card-content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .card h2 {
+      font-size: 20px;
+      margin: 0 0 10px;
+      color: #0070f3;
+    }
+    .btn {
+      margin-top: auto;
+      display: inline-block;
+      padding: 12px;
+      background: #0070f3;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      text-align: center;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .btn:hover {
+      background: #0059c1;
+      transform: scale(1.05);
+    }
+    /* Media query for smaller devices */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+      .portfolio {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Welcome to My Portfolio</h1>
+  </div>
+
+  <header>
+    <p>Websites I've created for NGOs, businesses, and international organizations</p>
+  </header>
+
+  <div class="portfolio">
+
+    <div class="card">
+      <img src="https://image.thum.io/get/width/800/crop/600/https://redcrescent.kg/ru/" alt="Red Crescent">
+      <div class="card-content">
+        <h2>Red Crescent of Kyrgyzstan</h2>
+        <a class="btn" href="https://redcrescent.kg/ru/" target="_blank">View Website</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://image.thum.io/get/width/800/crop/600/https://www.amalalliance.org/" alt="Amal Alliance">
+      <div class="card-content">
+        <h2>Amal Alliance</h2>
+        <a class="btn" href="https://www.amalalliance.org/" target="_blank">View Website</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://image.thum.io/get/width/800/crop/600/https://volunteer.kg/" alt="Volunteer KG">
+      <div class="card-content">
+        <h2>Volunteer KG</h2>
+        <a class="btn" href="https://volunteer.kg/" target="_blank">View Website</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://image.thum.io/get/width/800/crop/600/https://erna.redcrossredcrescent.com/" alt="Erna Red Cross">
+      <div class="card-content">
+        <h2>Erna Red Cross Red Crescent</h2>
+        <a class="btn" href="https://erna.redcrossredcrescent.com/" target="_blank">View Website</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://image.thum.io/get/width/800/crop/600/https://ask.redcrescent.kg/" alt="Ask Red Crescent">
+      <div class="card-content">
+        <h2>Ask Red Crescent</h2>
+        <a class="btn" href="https://ask.redcrescent.kg/" target="_blank">View Website</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://image.thum.io/get/width/800/crop/600/https://www.hotel-olive.com/" alt="Hotel Olive">
+      <div class="card-content">
+        <h2>Hotel Olive</h2>
+        <a class="btn" href="https://www.hotel-olive.com/" target="_blank">View Website</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://image.thum.io/get/width/800/crop/600/https://centralredcrossredcrescent.com/" alt="Central Red Cross">
+      <div class="card-content">
+        <h2>Central Red Cross Red Crescent</h2>
+        <a class="btn" href="https://centralredcrossredcrescent.com/" target="_blank">View Website</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://image.thum.io/get/width/800/crop/600/https://karkas.kg/" alt="Karkas KG">
+      <div class="card-content">
+        <h2>Karkas KG</h2>
+        <a class="btn" href="https://karkas.kg/" target="_blank">View Website</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://image.thum.io/get/width/800/crop/600/http://iris.interior.studio.tilda.ws/" alt="Iris Interior Studio">
+      <div class="card-content">
+        <h2>Iris Interior Studio</h2>
+        <a class="btn" href="http://iris.interior.studio.tilda.ws/" target="_blank">View Website</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://image.thum.io/get/width/800/crop/600/https://ipotekademir.kg/index.php/ky/" alt="Ipoteka Demir">
+      <div class="card-content">
+        <h2>Ipoteka Demir</h2>
+        <a class="btn" href="https://ipotekademir.kg/index.php/ky/" target="_blank">View Website</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://image.thum.io/get/width/800/crop/600/https://almainsurance.kg/en" alt="Alma Insurance">
+      <div class="card-content">
+        <h2>Alma Insurance</h2>
+        <a class="btn" href="https://almainsurance.kg/en" target="_blank">View Website</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://image.thum.io/get/width/800/crop/600/https://intera.kg/" alt="Intera KG">
+      <div class="card-content">
+        <h2>Intera KG</h2>
+        <a class="btn" href="https://intera.kg/" target="_blank">View Website</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://image.thum.io/get/width/800/crop/600/https://hivtbcc.kg/" alt="HIV TBCC KG">
+      <div class="card-content">
+        <h2>HIV TBCC KG</h2>
+        <a class="btn" href="https://hivtbcc.kg/" target="_blank">View Website</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://image.thum.io/get/width/800/crop/600/https://mbnso.ru/" alt="MBSNO Russia">
+      <div class="card-content">
+        <h2>MBSNO Russia</h2>
+        <a class="btn" href="https://mbnso.ru/" target="_blank">View Website</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
